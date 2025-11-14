@@ -1,3 +1,5 @@
+console.log("index.js wurde geladen");
+
 // ===========================================
 // 1. SMOOTH SCROLL + POSITION-AUTO-FILL
 // ===========================================
