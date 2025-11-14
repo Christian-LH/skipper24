@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>skipper24 – Personal für Fahrgastschiffe finden</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER / HERO SECTION -->
+  <header class="py-5 text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Sofort Personal für dein Fahrgastschiff finden</h1>
+      <p class="lead mt-3">
+        Schiffsführer · Matrosen · Kellner · Service · Dragqueens
+      </p>
+    </div>
+  </header>
+
+  <!-- ROLE CARDS -->
+  <section class="container my-2 px-0">
+    <h2 class="text-center mb-4">Wen suchst du?</h2>
+
+    <!-- Horizontale Scroll-Leiste -->
+    <div class="role-scroll-wrapper">
+
+      <!-- Card Schiffsführer -->
+      <div class="role-card" id="role-schiffsfuehrer">
+        <div class="role-image">
+          <img src="img/schiffsfuehrer.jpg" alt="Schiffsführer auf der Brücke">
+        </div>
+        <div class="role-content">
+          <h5>Schiffsführer</h5>
+          <p>Für Linien- und Charterfahrten, mit Patent.</p>
+        </div>
+      </div>
+
+      <!-- Card Matrose -->
+      <div class="role-card" id="role-matrose">
+        <div class="role-image">
+          <img src="img/matrose.jpg" alt="Matrose an Deck">
+        </div>
+        <div class="role-content">
+          <h5>Matrose</h5>
+          <p>Decksarbeit, Leinen, Sicherheit an Bord.</p>
+        </div>
+      </div>
+
+      <!-- Card Kellner / Service -->
+      <div class="role-card" id="role-kellner">
+        <div class="role-image">
+          <img src="img/kellner.jpg" alt="Servicekraft im Bordrestaurant">
+        </div>
+        <div class="role-content">
+          <h5>Kellner / Service</h5>
+          <p>Getränke- & Speiseservice für Fahrgäste.</p>
+        </div>
+      </div>
+
+      <!-- Card Dragqueen -->
+      <div class="role-card" id="role-dragqueen">
+        <div class="role-image">
+          <img src="img/dragqueen.jpg" alt="Dragqueen auf der Bühne">
+        </div>
+        <div class="role-content">
+          <h5>Dragqueen</h5>
+          <p>Show, Moderation & Entertainment an Bord.</p>
+        </div>
+      </div>
+
+      <!-- Card Sonstiges -->
+      <div class="role-card" id="role-sonstiges">
+        <div class="role-image">
+          <img src="img/sonstiges.jpg" alt="Sonstige Crewposition">
+        </div>
+        <div class="role-content">
+          <h5>Sonstiges</h5>
+          <p>Freie Rolle: z.B. DJ, Host, Küche.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="container my-5" id="form-section">
+    <h2 class="text-center mb-4">Personalanfrage</h2>
+
+    <form id="crew-form" class="mx-auto" style="max-width: 600px;">
+
+      <!-- Gesuchte Position (wird per Cards vorausgefüllt) -->
+      <div class="mb-3">
+        <label for="position" class="form-label">Gesuchte Position*</label>
+        <input type="text" id="position" name="position" class="form-control" placeholder="z.B. Kellner, Schiffsführer" required>
+      </div>
+
+      <!-- Datum & Uhrzeit -->
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label">Datum*</label>
+          <input type="date" id="date" name="date" class="form-control" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label class="form-label">Startzeit*</label>
+          <input type="time" id="start" name="start" class="form-control" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label class="form-label">Endzeit*</label>
+          <input type="time" id="end" name="end" class="form-control">
+        </div>
+      </div>
+
+      <!-- Schiff / Anleger -->
+      <div class="mb-3">
+        <label class="form-label">Name des Schiffs*</label>
+        <input type="text" id="ship" name="ship" class="form-control" placeholder="z.B. MS Havelperle" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Liegeplatz / Abfahrtsort*</label>
+        <input type="text" id="pier" name="pier" class="form-control" placeholder="z.B. Anleger Friedrichstraße" required>
+      </div>
+
+      <!-- Kontaktdaten -->
+      <div class="mb-3">
+        <label class="form-label">Ihr Name*</label>
+        <input type="text" id="contact-name" name="contact-name" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">E-Mail-Adresse*</label>
+        <input type="email" id="contact-email" name="contact-email" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Telefon*</label>
+        <input type="tel" id="contact-phone" name="contact-phone" class="form-control" required>
+      </div>
+
+      <!-- Dringlichkeit -->
+      <div class="form-check mb-3">
+        <input type="checkbox" class="form-check-input" id="urgent">
+        <label for="urgent" class="form-check-label">Ich benötige jemanden sofort (innerhalb der nächsten 2 Stunden)</label>
+      </div>
+
+      <!-- Datenschutz -->
+      <div class="form-check mb-4">
+        <input type="checkbox" class="form-check-input" id="gdpr" required>
+        <label for="gdpr" class="form-check-label">Ich stimme zu, dass meine Anfrage von skipper24 per E-Mail und telefonisch beantwortet werden kann.</label>
+      </div>
+
+      <button type="submit" class="btn btn-success w-100">Anfrage senden</button>
+
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-4 bg-light">
+    <p class="mb-1">skipper24 © 2025</p>
+    <small><a href="#">Impressum</a> · <a href="#">Datenschutz</a></small>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="index.js"></script>
+
+</body>
+</html>

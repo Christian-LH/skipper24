@@ -1,0 +1,143 @@
+/* ========== GLOBAL STYLES ========== */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #fafafc;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+/* ========== HORIZONTALE CARD-SCROLL-LEISTE ========== */
+
+.role-scroll-wrapper {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.0rem 0 0.5rem 0.25rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+/* Scrollbar etwas dezenter (optional)
+.role-scroll-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.role-scroll-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.role-scroll-wrapper::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+  border-radius: 3px;
+} */
+
+/* ========== ROLE CARDS NEU (hochkant, Produkt-Style) ========== */
+
+.role-card {
+  flex: 0 0 230px;              /* feste Breite → hochkant */
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+  border: 1px solid #ececec;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.role-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+}
+
+/* Bildbereich oben */
+
+.role-image img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Textbereich unten */
+
+.role-content {
+  padding: 0.8rem 1rem 1rem;
+}
+
+.role-content h5 {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.role-content p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 576px) {
+  .role-card {
+    flex: 0 0 70%; /* auf sehr kleinen Screens etwas breiter */
+  }
+}
+
+
+/* ========== FORM SECTION ========== */
+
+#form-section {
+  scroll-margin-top: 70px; /* Ensures anchored scrolling lands nicely */
+}
+
+form label {
+  font-weight: 500;
+}
+
+form .form-control {
+  border-radius: 10px;
+}
+
+button[type="submit"] {
+  font-size: 1.1rem;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+
+/* ========== HEADER ========== */
+
+header {
+  background: linear-gradient(135deg, #f5f7ff, #eaf1ff);
+  border-bottom: 1px solid #dfe7ff;
+}
+
+header h1 {
+  color: #2a2e45;
+}
+
+header p {
+  color: #555;
+}
+
+
+/* ========== FOOTER ========== */
+
+footer {
+  border-top: 1px solid #e3e3e3;
+  font-
+}
