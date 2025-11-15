@@ -67,7 +67,7 @@ form.addEventListener("submit", (event) => {
   body += `E-Mail: ${data.email}\n`;
   body += `Telefon: ${data.phone}\n\n`;
   body += `Dringend: ${data.urgent ? "JA (innerhalb der nächsten 5 Stunden)" : "nein"}\n`;
-  body += `Kontakt-Zustimmung: Erteilt. Ich stimme zu, dass meine Anfrage von skipper24 per E-Mail und telefonisch beantwortet werden kann.\n`;
+  body += `Kontakt-Zustimmung: Erteilt. Ich stimme zu, dass skipper24 meine Anfrage auf elektronischem Wege beantwortet (E-Mail, Telefon, Messenger usw.). Die unten auf der skipper24-Webseite stehenden Nutzungsbedingungen gelten.\n`;
 
 
   // HIER deine Ziel-E-Mail-Adresse eintragen:
