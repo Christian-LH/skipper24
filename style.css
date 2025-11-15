@@ -1,6 +1,7 @@
 /* ========== GLOBAL STYLES ========== */
 
 body {
+  margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   background-color: #fafafc;
   color: #333;
@@ -15,7 +16,6 @@ section {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
 
 /* ========== HORIZONTALE CARD-SCROLL-LEISTE ========== */
 
@@ -33,20 +33,6 @@ section {
   width: 16px;     /* oder 24px */
   flex-shrink: 0;
 }
-
-/* Scrollbar etwas dezenter (optional)
-.role-scroll-wrapper::-webkit-scrollbar {
-  height: 6px;
-}
-
-.role-scroll-wrapper::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-.role-scroll-wrapper::-webkit-scrollbar-thumb {
-  background: #c5c5c5;
-  border-radius: 3px;
-} */
 
 /* ========== ROLE CARDS NEU (hochkant, Produkt-Style) ========== */
 
@@ -127,6 +113,39 @@ button[type="submit"] {
 
 /* ========== HEADER ========== */
 
+.topbar {
+  background-color: white;
+  border-bottom: 1px solid #e8e8e8; /* feine Apple-Linie */
+  padding: 7px 0;
+  width: 100%;
+}
+
+.brand {
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #0a3d62; /* maritimes Navy */
+  line-height: 1.2;
+}
+
+.powered-by {
+  font-size: 0.75rem;        /* deutlich kleiner als Logo */
+  font-weight: 300;          /* dünner */
+  color: #666;               /* dezenter */
+}
+
+.powered-by a {
+  color: #0a3d62;            /* maritimes Navy wie dein Logo */
+  text-decoration: none;
+  font-weight: 400;          /* minimal stärker als der Text */
+}
+
+.powered-by a:hover {
+  text-decoration: underline;
+}
+
+/* ========== HERO ========== */
+
 header {
   background: linear-gradient(135deg, #f5f7ff, #eaf1ff);
   border-bottom: 1px solid #dfe7ff;
@@ -140,6 +159,55 @@ header p {
   color: #555;
 }
 
+.btn-primary {
+  background-color: #0a3d62;
+  border-color: #0a3d62;
+  font-size: 1.05rem;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #093452;
+  border-color: #093452;
+  transform: translateY(-1px);
+}
+
+.hero {
+  background: linear-gradient(180deg, #eef5ff 0%, #ffffff 100%);
+  position: relative;
+  padding: 8px 0 24px;
+}
+
+.hero .container {
+  max-width: 680;
+}
+
+.hero-label {
+  margin-top: 10px;         /* wichtig, sonst schiebt sie nach unten */
+  margin-bottom: 0.75rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  color: #0a3d62;
+}
+
+.hero-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1d253a;
+  margin-top: 0.25rem;   /* statt 1rem oder mehr */
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: #4b5563;
+  margin-top: 0.25rem;   /* statt 1rem oder mehr */
+  margin-bottom: 0;
+}
 
 /* ========== FOOTER ========== */
 
