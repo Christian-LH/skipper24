@@ -131,7 +131,7 @@ button[type="submit"] {
 .powered-by {
   font-size: 0.75rem;        /* deutlich kleiner als Logo */
   font-weight: 300;          /* dünner */
-  color: #666;               /* dezenter */
+  color: #667;               /* dezenter */
 }
 
 .powered-by a {
